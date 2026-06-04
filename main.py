@@ -163,7 +163,7 @@ if tool == "📄 Resume Optimizer":
 
                     with st.spinner("🤖 Analyzing Resume..."):
                         response = requests.post(
-                            "http://localhost:8000/optimize-resume",
+                            "https://careerpilot-ai-yr12.onrender.com/optimize-resume",
                             json={
                                 "resume_text": resume_text,
                                 "description": description,
@@ -276,7 +276,7 @@ elif tool == "🎤 Interview Assistant":
         try:
             with st.spinner("🤖 Generating Interview Questions..."):
                 response = requests.post(
-                            "http://localhost:8000/interview-questions",
+                            "https://careerpilot-ai-yr12.onrender.com/interview-questions",
                             json={
                                  "role": role,
                                  "experience": experience
@@ -324,7 +324,7 @@ elif tool == "🛣️ Career Path Advisor":
         try:
 
             with st.spinner("🧠 Generating Career Roadmap..."):
-                response = requests.post("http://localhost:8000/career-roadmap",json={
+                response = requests.post("https://careerpilot-ai-yr12.onrender.com/career-roadmap",json={
         "dream_career": dream_career
     }
 )
