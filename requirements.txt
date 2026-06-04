@@ -1,4 +1,8 @@
+fastapi
+uvicorn
 streamlit
 openai
 pdfplumber
 python-dotenv
+requests
+pydantic
